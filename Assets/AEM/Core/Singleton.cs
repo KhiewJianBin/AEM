@@ -2,6 +2,10 @@
 
 using UnityEngine;
 
+/// <summary>
+/// Singleton Type T of Component
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public abstract class Singleton<T> : MonoBehaviour where T : Component
 {
 	#region Fields

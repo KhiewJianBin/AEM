@@ -1,13 +1,12 @@
-﻿using AEM.Managers;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TimerExample : GameManager
 {
     //Static Instance - So that Everyone can Access it
     public static TimerExample instance = null;
 
-    [ReadOnly] public Timer StartEndTimer;
-    [ReadOnly] public Timer IntervalTimer;
+    public Timer StartEndTimer;
+    public Timer IntervalTimer;
 
     public override void Awake()
     {

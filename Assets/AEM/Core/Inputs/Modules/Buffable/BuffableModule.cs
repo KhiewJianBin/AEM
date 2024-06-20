@@ -8,7 +8,7 @@ using UnityEngine;
 /// </summary>
 public abstract class BuffableModule : AEMModule
 {
-    [SerializeField,ReadOnlyWhenPlaying] public List<Buff> BuffList = new List<Buff>();
+    [SerializeField] public List<Buff> BuffList = new List<Buff>();
     public bool HasBuffType<T>()
     {
         for (int i = 0; i <BuffList.Count; i++)

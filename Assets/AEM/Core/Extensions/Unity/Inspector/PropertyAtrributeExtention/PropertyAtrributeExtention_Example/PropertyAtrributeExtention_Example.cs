@@ -4,8 +4,8 @@ using UnityEngine;
 public class PropertyAtrributeExtention_Example : MonoBehaviour
 {
     [Space]
-    [ReadOnly] public float ReadOnlyFloat = 0;
-    [ReadOnlyWhenPlaying] public float ReadOnlyWhenPlayingFloat = 0;
+    public float ReadOnlyFloat = 0;
+    public float ReadOnlyWhenPlayingFloat = 0;
 
     [Space]
     public float statMax = 100;

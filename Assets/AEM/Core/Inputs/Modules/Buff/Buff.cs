@@ -15,11 +15,11 @@ public abstract class Buff : AEMModule
         ValueStack = 1, //Add together buff values 
         DurationStack = 2} //Add together buff duration
     protected abstract StackType stackType { get; }
-    [SerializeField, ReadOnly] protected int StackLevel = 1;
+    [SerializeField] protected int StackLevel = 1;
 
     protected BuffableModule buffablemodule;
     protected Timer buffTimer;
-    [ReadOnlyWhenPlaying] public float BuffDuration = Mathf.Infinity;
+    public float BuffDuration = Mathf.Infinity;
 
     // OnStart, find the parent with buffablemodule and tell them to add this buff
     void Start()

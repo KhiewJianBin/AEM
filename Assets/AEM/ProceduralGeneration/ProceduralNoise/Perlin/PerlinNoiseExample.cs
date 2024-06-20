@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 public class PerlinNoiseExample : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class PerlinNoiseExample : MonoBehaviour
 
                 //Use Unity's Perlin
                 //float v = Mathf.PerlinNoise((fx + offset.x + timeoffset) * frequency, (fy + offset.y + timeoffset) * frequency);
-
+               
                 v = v.remap(-1,1,1,0);
                 texture.SetPixel(x, y, new Color(v, v, v, 1));
             }

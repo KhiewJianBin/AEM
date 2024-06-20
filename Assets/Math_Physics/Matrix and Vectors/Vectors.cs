@@ -3,35 +3,6 @@
 public class Vectors 
 {
 	/// <summary>
-	/// Project vector onto XZ plane
-	/// </summary>
-	/// <param name="v"></param>
-	/// <returns>result of projecting v onto XZ plane</returns>
-	public static Vector3 XZProject(Vector3 v)
-	{
-		return new Vector3(v.x, 0.0f, v.z);
-	}
-
-	/// <summary>
-	/// Project vector onto YZ plane
-	/// </summary>
-	/// <param name="v"></param>
-	/// <returns>result of projecting v onto YZ plane</returns>
-	public static Vector3 YZProject(Vector3 v)
-	{
-		return new Vector3(0.0f, v.y, v.z);
-	}
-
-	/// <summary>
-	/// Project vector onto XY plane
-	/// </summary>
-	/// <param name="v"></param>
-	/// <returns>result of projecting v onto XY plane</returns>
-	public static Vector3 XYProject(Vector3 v)
-	{
-		return new Vector3(v.x, v.y, 0.0f);
-	}
-	/// <summary>
 	/// Creates a quaternion containing the rotation from the input matrix.
 	/// </summary>
 	/// <param name="m">Input matrix to convert to quaternion</param>

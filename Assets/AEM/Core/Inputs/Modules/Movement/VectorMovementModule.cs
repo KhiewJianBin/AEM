@@ -5,7 +5,7 @@ using UnityEngine;
 public class VectorMovementModule : MovementModule
 {
     public SpeedModule speedmodule;
-    [SerializeField,ReadOnly] float speed;
+    [SerializeField] float speed;
 
     InputTrigger Forward = new InputTrigger();
     InputTrigger Backward = new InputTrigger();

@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class CharacterModule : BuffableModule
 {
-    [ReadOnly] public HealthModule healthModule;
-    [ReadOnly] public ManaModule manaModule;
-    [ReadOnly] public EnergyModule energyModule;
+    public HealthModule healthModule;
+    public ManaModule manaModule;
+    public EnergyModule energyModule;
 
     public float Health => ((Func<float>)BuffData["Health"]).Invoke();
     public float Mana => ((Func<float>)BuffData["Mana"]).Invoke();

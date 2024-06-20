@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class AEMCameraControl : MonoBehaviour
 {
-    [ReadOnly]
     public AEMCamera ActiveCamera;
 
     public List<AEMCamera> Cameralist;

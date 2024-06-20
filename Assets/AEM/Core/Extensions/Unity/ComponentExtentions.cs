@@ -113,7 +113,11 @@ public static class ComponentExtentions
 
     //---------------------------------------------------
 
-
+    /// <summary>
+    /// Clone a copy of a Unity Component
+    /// Warning!! Uses Reflection
+    /// Warning!!! Refrence types such as List<> will share the same data, will need to perform deep copy instead
+    /// </summary>
     public static T GetCopyOf<T>(this Component comp, T other) where T : Component
     {
         Type type = comp.GetType();
@@ -137,5 +141,13 @@ public static class ComponentExtentions
             finfo.SetValue(comp, finfo.GetValue(other));
         }
         return comp as T;
+    }
+
+    /// <summary>
+    /// Wrapper to add component
+    /// </summary>
+    public static T AddComponentAsCopy<T>(this GameObject go, T toAdd) where T : Component
+    {
+        return go.AddComponent<T>().GetCopyOf(toAdd) as T;
     }
 }
