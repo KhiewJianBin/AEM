@@ -1,4 +1,6 @@
-﻿public class Rectangle
+﻿using UnityEngine;
+
+public class Rectangle
 {
     public float centerX;
     public float centerY;
@@ -13,7 +15,7 @@
         height = h;
     }
 
-    public bool Contains(Point3D point)
+    public bool Contains(Vector3 point)
     {
         bool contains = (point.x > centerX - width && point.x < centerX + width && point.y > centerY - height && point.y < centerY + height);
         return contains;

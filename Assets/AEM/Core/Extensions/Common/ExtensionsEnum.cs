@@ -1,6 +1,0 @@
-public enum OriginAnchor
-{
-    TOPLEFT,TOP,TOPRIGHT,
-    LEFT,MIDDLE,RIGHT,
-    BOTTOMLEFT,BOTTOM,BOTTOMRIGHT
-}

@@ -1,4 +1,6 @@
-﻿public class Cube
+﻿using UnityEngine;
+
+public class Cube
 {
     public float centerX;
     public float centerY;
@@ -17,7 +19,7 @@
         depth = d;
     }
 
-    public bool Contains(Point3D point)
+    public bool Contains(Vector3 point)
     {
         bool contains = (point.x > centerX - width && point.x < centerX + width && point.y > centerY - height && point.y < centerY + height && point.z > centerZ - depth && point.z < centerZ + depth);
         return contains;

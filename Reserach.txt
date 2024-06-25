@@ -1,1 +1,0 @@
-Transform.Lookat + Transform. Translate screwes up the distance of two object
